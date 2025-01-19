@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>401b9ac1-d4fd-4bd4-8808-7c4b979aff8a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MathInPython.py</StartupFile>
+    <StartupFile>ConditionalExpressions.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ConditionalExpressions.py" />
     <Compile Include="MathInPython.py" />
     <Compile Include="TheFirstPyApp.py" />
     <Compile Include="TypeCasting.py" />
