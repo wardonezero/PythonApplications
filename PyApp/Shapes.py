@@ -23,7 +23,7 @@ class Triangle(Shape):
         super().describe()
     
     def area(self):
-        return self.base * self.height / 2
+        return self.base * self.height * 0.5
 
 class Circle(Shape):
     def __init__(self, color, isFilled, radius):
@@ -35,7 +35,7 @@ class Circle(Shape):
         super().describe()
 
     def area(self):
-        return 3.14 * self.radius * self.radius
+        return 3.14 * self.radius ** 2
 
 class Square(Shape):
     def __init__(self, color, isFilled, side):
@@ -47,4 +47,4 @@ class Square(Shape):
         super().describe()
 
     def area(self):
-        return self.side * self.side
+        return self.side ** 2
