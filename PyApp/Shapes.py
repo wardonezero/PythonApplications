@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Shape:
+class Shape(ABC):
     def __init__(self, color, isFilled):
         self.color = color
         self.isFilled = isFilled
