@@ -1,7 +1,13 @@
+from abc import ABC, abstractmethod
+
 class Shape:
     def __init__(self, color, isFilled):
         self.color = color
         self.isFilled = isFilled
+    
+    def describe(self):
+        print(f"It is {self.color} and {'filled' if self.isFilled else 'not filled'}")
+        
 
 class Triangle(Shape):
     def __init__(self, color, isFilled, base, height):
