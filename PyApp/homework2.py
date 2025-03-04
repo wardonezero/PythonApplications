@@ -9,7 +9,7 @@ def AddElements():
 
 def InsertElement():
     index = int(input('Enter the index of the element where you want to insert the new element: '))
-    if index > len(list):
+    if index >= len(list):
         print('Index out of range')
     else:
         element = input('Enter the element you want to insert')
@@ -151,7 +151,7 @@ print(f'Square of {a} is {a ** 2} and Square of {b} is {b ** 2}')
 a = 8
 b = 16
 c = 32
-print(a if a > b and a > c else b if b > c else c)
+print(a if a > b and a > c else b if b > c and b > a else c)
 
 
 #Accept two integer inputs from the user and calculate the absolute difference between them using the abs() function. Print the result.
