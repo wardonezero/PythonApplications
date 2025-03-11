@@ -56,12 +56,13 @@ print(str_input[::-1])
 #Count how many vowels are in the string and print the count.
 
 #Write a program that takes a string as input and outputs the longest substring without repeating characters.
-str_input = 'abcabcbb'
+str = 'abcabcbbdump'
 longest = ''
-for i in range(len(str_input)):
-    for j in range(i, len(str_input)):
-        if len(str_input[i:j]) > len(longest) and len(set(str_input[i:j])) == len(str_input[i:j]):
-            longest = str_input[i:j]
+for i in range(len(str)):
+    for j in range(i + 1, len(str) + 1):
+        if len(str[i:j]) > len(longest) and len(set(str[i:j])) == len(str[i:j]):
+            longest = str[i:j]
+        
 print(longest)
 
 #Write a program using a while loop that repeatedly asks the user to input a number until they input 0, then print the sum of all entered numbers.
