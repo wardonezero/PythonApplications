@@ -40,6 +40,10 @@ numbers = {
     11: "eleven",
 }
 
+numLs = [1, 2, 4, 6, 8, 11]
+for num in numLs:
+    print(numbers[num])
+
 for number in numbers:
     print(numbers[number])
 
@@ -66,7 +70,8 @@ for word in words:
         continue
     else:
         words_set.add(word)
-        print(word)
+for word in words_set:
+    print(word)
 
 #Given two lists of numbers, use sets to find and print the common elements between them.
 ls1 = [1, 2, 3, 4, 5]
