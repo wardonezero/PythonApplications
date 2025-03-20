@@ -111,11 +111,11 @@ c = 'a'+ 'b'
 c = 'a'+ '    '+ 'b'
 
 #7 Write a program that takes a string and extracts the first and last character using subscripts (indexing).
-someText = input('Enter some text: ')
+someText = 'Write a program that takes a string and extracts the first and last character using subscripts (indexing)'
 print(f'the first letter is {someText[0]} and the last letter is {someText[-1]}')
 
 #8 Write a program that slices the first 3 characters and the last 2 characters from a string.
-someText = 'idk what to write'
+someText = 'Write a program that takes a string and extracts the first and last character using subscripts (indexing)'
 slicedText = someText[3:-2]
 print(f'Sliced text: {slicedText}')
 # print(f'the first three letters are {someText[:3]} and the last two letters are {someText[-2:]}')
@@ -131,8 +131,8 @@ print(someText.upper())
 print(someText.lower())
 
 #11 Write a program that checks whether a string starts with the letter "A" and ends with the letter "Z".
-print(f'The first letter is A: {someText[0]=='A'}')
-print(f"The last letter is Z: {someText[-1]=='Z'}")
+print(f'The first letter is A: {someText[0]=="A"}')
+print(f'The last letter is Z: {someText[-1]=="Z"}')
 
 #12 Write a program that counts how many times the letter "a" appears in a given string.
 banana = 'banana'

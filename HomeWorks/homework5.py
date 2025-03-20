@@ -11,7 +11,10 @@ print(addTwoNumbers(20,20))
 
 #Create a function multiply that takes two numbers and returns their product.
 def multiplyTwoNumbers(a,b):
-    return a * b
+    if isinstance(a,int,float) and isinstance(b,int,float):
+        return a * b
+    else:
+        return "Please enter integer numbers!"
 
 #Write a function personal_greet that takes a name as an argument and prints "Hello, [name]!".
 def personal_greet(name):
@@ -19,7 +22,10 @@ def personal_greet(name):
 
 #Write a function calculate_area that takes length and width as parameters and returns the area of a rectangle.
 def calculate_area(length, width):
-    return length * width
+    if isinstance(length, int,float) and isinstance(width, int,float):
+        return length * width
+    else:
+        return "Please enter integer numbers!"
 
 #Write a function greet_with_message that takes a name and an optional message. The default message should be "Welcome!".
 def greet_with_message(name, message = "Welcome!"):
