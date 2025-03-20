@@ -10,4 +10,5 @@ def isPrime(n: int) -> bool:
 
 for i in range(1, 101):
     if isPrime(i):
-        print(i)
+        print(i, end=" ")
+print()
