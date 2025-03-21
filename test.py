@@ -1,15 +1,11 @@
-from math import sqrt
-def isPrime(n: int) -> bool:
-    if (not isinstance(n, int) or n < 2 or n % 2 == 0) and n != 2:
-        return False
-    # for i in range(3, n//2, 2):
-    for i in range(3, int(sqrt(n))+1, 2):
-        if n % i == 0:
-            return False
-    return True
+def book_ticket(destination, price, discount=0, *extras, **details):
+    print(f"Booking to {destination} for ${price - discount}")
+    if extras:
+        print(f"Extras: {', '.join(extras)}")
+    if details:
+        print(f"Details: {details}")
 
 
-for i in range(1, 100):
-    if isPrime(i):
-        print(i, end=" ")
-print()
+# book_ticket("Paris", extras=["window seat", "meal"], discount=10, price=100)
+book_ticket("Paris", 100, 10, "window seat", "meal")
+book_ticket("Paris", 100, 10, "window seat", "meal", **{"name": "John"})
