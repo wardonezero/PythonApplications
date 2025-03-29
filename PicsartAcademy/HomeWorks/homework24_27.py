@@ -69,7 +69,8 @@ def customEnumerate(iterable, start=0):
     if not isinstance(start, int):
         raise TypeError(f"{type(start)} object is not int")
     for i in iterable:
-        yield start + i, iterable[i]
+        yield start, iterable[i]
+        start+=1
 
 if __name__ == "__main__":
     print(" filter", tuple(filter(None, "abc")))
