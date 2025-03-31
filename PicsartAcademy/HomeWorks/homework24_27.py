@@ -52,11 +52,9 @@ def customReduce(function, iterable, initial=None):
         raise TypeError(f"{type(iterable)} object is not iterable")
     if initial is not None:
         result = initial
-        for item in iterable:
-            result = function(result, item)
     else:
         result = iterable[0]
-        for item in iterable[1:]:
+    for item in iterable[1:]:
             result = function(result, item)
     return result
 
