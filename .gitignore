@@ -365,3 +365,11 @@ FodyWeavers.xsd
 
 #My ignores
 test.py
+PicsartAcademy/HomeWorks/12.txt
+PicsartAcademy/HomeWorks/cleaned_data.txt
+PicsartAcademy/HomeWorks/copy_image.jpg
+PicsartAcademy/HomeWorks/destination.txt
+PicsartAcademy/HomeWorks/exclusive_file.txt
+PicsartAcademy/HomeWorks/summary.txt
+PicsartAcademy/HomeWorks/data_files/example_data.txt
+PicsartAcademy/HomeWorks/relative_files/relative_output.txt

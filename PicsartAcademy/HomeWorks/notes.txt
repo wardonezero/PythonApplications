@@ -1,0 +1,2 @@
+Python is fun!
+Remember to review file handling in Python!

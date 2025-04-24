@@ -16,8 +16,10 @@ def repeat(n: int):
 
         @wraps(function)
         def wrapper(*args, **kwargs):
+            results = []
             for _ in range(n):
-                function(*args, **kwargs)
+                results.append(function(*args, **kwargs))
+            return results
 
         return wrapper
 
