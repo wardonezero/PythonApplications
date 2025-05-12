@@ -133,7 +133,7 @@ users = {
     1: {
         'name': 'Raymond',
         'surname': 'Reddington',
-        'email': 'RaymondReddington@email.org',
+        'email': 'RaymondReddington@coc.org',
         'password': 'KATRU',
         'phone': "Nick's Pizza"
     },
